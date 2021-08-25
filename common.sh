@@ -1,4 +1,20 @@
 # Use provided remote, or 'origin' if none
+
+if ! command -v git &> /dev/null; then
+	echo "The 'git' command is not found on this system."
+	echo "Please install Git."
+	exit 1
+fi
+
+if command -v open &> /dev/null; then
+	OPEN_CMD=open
+elif command -v xdg-open &> /dev/null; then
+	OPEN_CMD=xdg-open
+else
+	echo "No supported open command (open, xdg-open) found on this system."
+	exit 1
+fi
+
 REMOTE="${1:-origin}"
 
 git_open () {
@@ -13,9 +29,9 @@ git_open () {
 
     if [[ $BASE_URL == *"github.com"* ]]; then
     	# Open GitHub URL
-    	open "https://${BASE_URL}${GITHUB_POSTFIX}"
+    	"${OPEN_CMD}" "https://${BASE_URL}${GITHUB_POSTFIX}"
     else
     	# Assume we're dealing with GitLab
-    	open "https://${BASE_URL}${GITLAB_POSTFIX}"
+    	"${OPEN_CMD}" "https://${BASE_URL}${GITLAB_POSTFIX}"
     fi
 }
