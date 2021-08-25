@@ -4,6 +4,11 @@ A set of scripts to open a browsable GitHub/GitLab URL for a local Git repositor
 Defaults to the `origin` remote, but you can specify an alternative remote for each command.
 Run `git remote` to list the available remotes for a Git repository.
 
+## Requirements
+
+* You should have the `git` command installed.
+* Either `open` (macOS) or `xdg-open` (Linux) to open URLs.
+
 ## Setup
 
 Download/clone these files in a directory on your system and add this directory to your `PATH`.
