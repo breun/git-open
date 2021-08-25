@@ -1,0 +1,10 @@
+#/usr/bin/env bash
+
+DIR="${BASH_SOURCE[0]%/*}"
+: ${DIR:="."}
+
+. "${DIR}"/common.sh
+
+CURRENT_BRANCH=`git branch --show-current`
+
+git_open "/tree/${CURRENT_BRANCH}" "/-/tree/${CURRENT_BRANCH}"
