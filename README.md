@@ -8,6 +8,7 @@ Run `git remote` to list the available remotes for a Git repository.
 
 * You should have the `git` command installed.
 * Either `open` (macOS) or `xdg-open` (Linux) to open URLs.
+* The `bash` shell should be installed, but you don't need to use it as your default shell.
 
 ## Setup
 
