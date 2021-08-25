@@ -1,6 +1,6 @@
 # git-open
 
-A set of scripts to open a browsable GitHub/GitLab URL for a local Git repo.
+A set of scripts to open a browsable GitHub/GitLab URL for a local Git repository.
 Defaults to the `origin` remote, but you can specify an alternative remote for each command.
 Run `git remote` to list the available remotes for a Git repository.
 
