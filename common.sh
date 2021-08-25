@@ -1,20 +1,19 @@
-# Use provided remote, or 'origin' if none
-
 if ! command -v git &> /dev/null; then
-	echo "The 'git' command is not found on this system."
-	echo "Please install Git."
-	exit 1
+    echo "The 'git' command is not found on this system."
+    echo "Please install Git."
+    exit 1
 fi
 
 if command -v open &> /dev/null; then
-	OPEN_CMD=open
+    OPEN_CMD=open
 elif command -v xdg-open &> /dev/null; then
-	OPEN_CMD=xdg-open
+    OPEN_CMD=xdg-open
 else
-	echo "No supported open command (open, xdg-open) found on this system."
-	exit 1
+    echo "No supported open command (open, xdg-open) found on this system."
+    exit 1
 fi
 
+# Use provided remote, or 'origin' if none
 REMOTE="${1:-origin}"
 
 git_open () {
