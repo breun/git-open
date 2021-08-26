@@ -4,10 +4,12 @@ if ! command -v git &> /dev/null; then
     exit 1
 fi
 
-if command -v open &> /dev/null; then
-    OPEN_CMD=open
-elif command -v xdg-open &> /dev/null; then
+if command -v xdg-open &> /dev/null; then
+    # Linux
     OPEN_CMD=xdg-open
+elif command -v open &> /dev/null; then
+    # macOS
+    OPEN_CMD=open
 else
     echo "No supported open command (open, xdg-open) found on this system."
     exit 1
