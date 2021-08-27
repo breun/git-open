@@ -26,7 +26,7 @@ git_open () {
     # Examples:
     #     git@gitlab.com:group/project.git => https://gitlab.com/group/project
     #     https://github.com:group/project.git => https://github.com/group/project
-    local BASE_URL="https://$(git remote get-url "${REMOTE}" | sed 's|^git@||' | sed 's|^https://||' | sed 's|\.git$||' | sed 's|:|/|')"
+    local BASE_URL="https://$(git remote get-url "${REMOTE}" | sed 's|ssh://||' | sed 's|^git@||' | sed 's|^https://||' | sed 's|\.git$||' | sed 's|:|/|')"
 
     if [[ "${BASE_URL}" == "https://github.com/"* ]]; then
     	# Open GitHub URL
