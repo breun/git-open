@@ -20,6 +20,7 @@ The following commands are provided.
 
 |Command                      |Description |
 ---                           |---
+|`git-open <remote>`          |Opens the URL for the home of the specified remote, or `origin` if none provided. |
 |`git-open-branch <remote>`   |Opens the URL for the current branch for the specified remote, or `origin` if none provided. |
 |`git-open-branches <remote>` |Opens the URL for all branches for the specified remote, or `origin` if none provided. |
 |`git-open-ci <remote>`       |Opens the URL for the continuous integration jobs for the specified remote, or `origin` if none provided. |
