@@ -14,34 +14,17 @@ Run `git remote` to list the available remotes for a Git repository.
 
 Download/clone these files in a directory on your system and add this directory to your `PATH`.
 
-## Usage
+## Commands
 
-### git-open-branch
+The following commands are provided.
 
-Open the URL for the current branch for the `origin` remote:
-
-    $ git-open-branch
-
-Open the URL for the current branch for another remote:
-
-    $ git-open-branch <remote>
-
-### git-open-ci
-
-Open the URL for the continuous integration jobs for the `origin` remote:
-
-    $ git-open-ci
-
-Open the URL for the continuous integration jobs for another remote:
-
-    $ git-open-ci <remote>
-
-### git-open-requests
-
-Open the URL for the pull/merge requests for the `origin` remote:
-
-    $ git-open-requests
-
-Open the URL for the pull/merge requests for another remote:
-
-    $ git-open-requests <remote>
+|Command                      |Description |
+---                           |---
+|`git-open-branch <remote>`   |Opens the URL for the current branch for the specified remote, or `origin` if none provided. |
+|`git-open-branches <remote>` |Opens the URL for all branches for the specified remote, or `origin` if none provided. |
+|`git-open-ci <remote>`       |Opens the URL for the continuous integration jobs for the specified remote, or `origin` if none provided. |
+|`git-open-commits <remote>`  |Opens the URL for the commits for the specified remote, or `origin` if none provided. |
+|`git-open-issues <remote>`   |Opens the URL for the issues for the specified remote, or `origin` if none provided. |
+|`git-open-releases <remote>` |Opens the URL for the releases for the specified remote, or `origin` if none provided. |
+|`git-open-requests <remote>` |Opens the URL for the pull/merge requests for the specified remote, or `origin` if none provided. |
+|`git-open-tags <remote>`     |Opens the URL for the tags for the specified remote, or `origin` if none provided. |
