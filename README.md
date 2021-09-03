@@ -18,14 +18,14 @@ Download/clone these files in a directory on your system and add this directory 
 
 The following commands are provided.
 
-|Command                      |Description |
----                           |---
-|`git-open`          |Opens the URL for the home of the specified remote, or `origin` if none provided. |
-|`git-open-branch`   |Opens the URL for the current branch for the specified remote, or `origin` if none provided. |
-|`git-open-branches` |Opens the URL for all branches for the specified remote, or `origin` if none provided. |
-|`git-open-ci`       |Opens the URL for the continuous integration jobs for the specified remote, or `origin` if none provided. |
-|`git-open-commits`  |Opens the URL for the commits for the specified remote, or `origin` if none provided. |
-|`git-open-issues`   |Opens the URL for the issues for the specified remote, or `origin` if none provided. |
-|`git-open-releases` |Opens the URL for the releases for the specified remote, or `origin` if none provided. |
-|`git-open-requests` |Opens the URL for the pull/merge requests for the specified remote, or `origin` if none provided. |
-|`git-open-tags`     |Opens the URL for the tags for the specified remote, or `origin` if none provided. |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Command&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description |
+| ------------------- | ----------- |
+| `git-open`          | Opens the URL for the home of the specified remote, or `origin` if none provided. |
+| `git-open-branch`   | Opens the URL for the current branch for the specified remote, or `origin` if none provided. |
+| `git-open-branches` | Opens the URL for all branches for the specified remote, or `origin` if none provided. |
+| `git-open-ci`       | Opens the URL for the continuous integration jobs for the specified remote, or `origin` if none provided. |
+| `git-open-commits`  | Opens the URL for the commits for the specified remote, or `origin` if none provided. |
+| `git-open-issues`   | Opens the URL for the issues for the specified remote, or `origin` if none provided. |
+| `git-open-releases` | Opens the URL for the releases for the specified remote, or `origin` if none provided. |
+| `git-open-requests` | Opens the URL for the pull/merge requests for the specified remote, or `origin` if none provided. |
+| `git-open-tags`     | Opens the URL for the tags for the specified remote, or `origin` if none provided. |
